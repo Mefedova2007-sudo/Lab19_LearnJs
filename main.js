@@ -77,3 +77,50 @@ console.log(calculateDiscount(999.99, 15));
 
 let finalPrice = calculateDiscount(2500, 25);
 console.log('Итоговая цена:', finalPrice); 
+
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+let colors = ["красный", "зеленый", "синий"];
+colors[0] 
+colors[1] 
+colors[2] 
+colors[3] 
+colors[1] = "желтый"; 
+colors[colors.length - 1] 
+
+let students = [];
+
+students.push("Анна");
+students.push("Максим");
+students.push("Елена");
+
+console.log("После добавления:", students); 
+
+
+let removed = students.pop();
+console.log("Удален:", removed); 
+
+console.log("Итоговый массив:", students);
+console.log("Длина массива:", students.length); 
+
+let cities = ["Москва", "Санкт-Петербург", "Казань", "Новосибирск", "Екатеринбург"];
+
+let searchCity = "Казань";
+
+let index = cities.indexOf(searchCity);
+
+if (index !== -1) {
+    console.log(`✅ Город "${searchCity}" найден! Индекс: ${index}`);
+} else {
+    console.log(`❌ Город "${searchCity}" не найден`);
+}
+
+console.log("\nПроверка разных городов:");
+["Москва", "Лондон", "Париж", "Казань"].forEach(city => {
+    let idx = cities.indexOf(city);
+    if (idx !== -1) {
+        console.log(`${city}: найден (индекс ${idx})`);
+    } else {
+        console.log(`${city}: не найден`);
+    }
+});
