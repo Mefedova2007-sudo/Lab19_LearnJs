@@ -54,3 +54,26 @@ for (let i = 1; i <= 4; i++) {
     }
     console.log(stars);
 }
+function sum(a, b) {
+return a + b;
+}
+console.log(sum(3, 5));
+
+function printInfo(name, age) {
+   
+    console.log("Имя: " + name + ", Возраст: " + age);
+}
+printInfo("Анна", 25);
+printInfo("Максим", 30);
+printInfo("Елена", 28);
+
+console.log(calculateDiscount(1000));  
+
+console.log(calculateDiscount(1000, 20));  
+console.log(calculateDiscount(1000, 50));  
+console.log(calculateDiscount(1000, 0));   
+
+console.log(calculateDiscount(999.99, 15)); 
+
+let finalPrice = calculateDiscount(2500, 25);
+console.log('Итоговая цена:', finalPrice); 
