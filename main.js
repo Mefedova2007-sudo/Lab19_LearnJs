@@ -124,3 +124,44 @@ console.log("\nПроверка разных городов:");
         console.log(`${city}: не найден`);
     }
 });
+
+let user2 = {
+name: "Ivan",
+age: 20,
+isStudent: true,
+};
+console.log(user2);
+
+let book = {
+    title: "Война и мир",
+    author: "Лев Толстой",
+    year: 1869
+};
+console.log("Название книги:", book.title);
+console.log("Автор книги:", book.author);
+console.log("Год издания:", book.year);
+book.year = 2024; 
+console.log("Новый год издания:", book.year);
+console.log("Обновленная книга:", book);
+
+let car = {
+    brand: "Toyota",
+    year: 2022,
+    getInfo: function() {
+        console.log(`Автомобиль: ${this.brand}, Год выпуска: ${this.year}`);
+    }
+};
+car.getInfo(); 
+
+let product = {
+    name: "Смартфон",
+    brand: "Xiaomi",
+    price: 29999,
+    inStock: true,
+    color: "Черный",
+    weight: 180 
+};
+console.log("Свойства объекта product:");
+for (let key in product) {
+    console.log(key + ": " + product[key]);
+}
