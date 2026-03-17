@@ -131,7 +131,7 @@ age: 20,
 isStudent: true,
 };
 console.log(user2);
-
+//
 let book = {
     title: "Война и мир",
     author: "Лев Толстой",
